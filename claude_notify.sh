@@ -15,6 +15,6 @@ result=$(
     "$message"
 )
 
-if [ "$result" != "close" ]; then
+if [ "$result" == "open" ]; then
   guake --show
 fi
