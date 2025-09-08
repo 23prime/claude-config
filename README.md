@@ -13,4 +13,5 @@
 
    ```sh
    $ ln -sf `pwd`/settings.json ~/.claude/settings.json
+   $ ln -sf `pwd`/commands ~/.claude/commands
    ```
