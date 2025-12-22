@@ -1,7 +1,6 @@
 {
   "permissions": {
     "allow": [
-      // Claude Code tools
       "Read",
       "Write",
       "Edit",
@@ -13,25 +12,21 @@
       "WebFetch",
       "WebSearch",
 
-      // Git (read-only operations)
       "Bash(git:status)",
       "Bash(git:diff)",
       "Bash(git:log)",
       "Bash(git:show)",
 
-      // Build tools
       "Bash(make:*)",
       "Bash(cmake:*)",
       "Bash(task:*)",
 
-      // File operations
       "Bash(ls:*)",
       "Bash(pwd:*)",
       "Bash(find:*)",
       "Bash(file:*)",
       "Bash(stat:*)",
 
-      // File content viewing
       "Bash(cat:*)",
       "Bash(bat:*)",
       "Bash(head:*)",
@@ -39,7 +34,6 @@
       "Bash(less:*)",
       "Bash(more:*)",
 
-      // Text processing
       "Bash(grep:*)",
       "Bash(rg:*)",
       "Bash(wc:*)",
@@ -50,46 +44,38 @@
       "Bash(sed:*)",
       "Bash(jq:*)",
 
-      // System info
       "Bash(whoami:*)",
-      "Bash(uname:*)",
+      "Bash(uname:*)"
     ],
     "ask": [
-      // Container tools
       "Bash(docker:*)",
       "Bash(docker-compose:*)",
 
-      // Network tools
       "Bash(curl:*)",
       "Bash(wget:*)",
 
-      // Potentially destructive operations
       "Bash(rm:*)",
 
-      // Git (risky operations)
       "Bash(git:branch)",
       "Bash(git:checkout)",
       "Bash(git:switch)",
       "Bash(git:pull)",
       "Bash(git:fetch)",
       "Bash(git:reset)",
-      "Bash(git:stash)",
+      "Bash(git:stash)"
     ],
     "deny": [
-      // Sensitive file access
       "Read(.env)",
       "Read(./secrets/**)",
       "Read(~/.ssh/**)",
 
-      // System administration
       "Bash(sudo:*)",
 
-      // Git (destructive operations)
       "Bash(git:add)",
       "Bash(git:commit)",
       "Bash(git:push)",
       "Bash(git:merge)",
-      "Bash(git:rebase)",
+      "Bash(git:rebase)"
     ]
   },
   "hooks": {
