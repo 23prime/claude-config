@@ -45,7 +45,9 @@
       "Bash(jq:*)",
 
       "Bash(whoami:*)",
-      "Bash(uname:*)"
+      "Bash(uname:*)",
+
+      "Bash(coderabbit --prompt-only)"
     ],
     "ask": [
       "Bash(docker:*)",
