@@ -93,7 +93,7 @@
     ]
   },
   "customConfig": {
-    "allowedDirs": ["/home/okkey/develop", "/home/okkey/work", "/home/okkey/tmp"]
+    "allowedDirs": ["~/develop", "~/work", "~/tmp"]
   },
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true
