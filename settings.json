@@ -11,29 +11,24 @@
       "Task",
       "WebFetch",
       "WebSearch",
-
       "Bash(git:status)",
       "Bash(git:diff)",
       "Bash(git:log)",
       "Bash(git:show)",
-
       "Bash(make:*)",
       "Bash(cmake:*)",
       "Bash(task:*)",
-
       "Bash(ls:*)",
       "Bash(pwd:*)",
       "Bash(find:*)",
       "Bash(file:*)",
       "Bash(stat:*)",
-
       "Bash(cat:*)",
       "Bash(bat:*)",
       "Bash(head:*)",
       "Bash(tail:*)",
       "Bash(less:*)",
       "Bash(more:*)",
-
       "Bash(grep:*)",
       "Bash(rg:*)",
       "Bash(wc:*)",
@@ -43,21 +38,27 @@
       "Bash(awk:*)",
       "Bash(sed:*)",
       "Bash(jq:*)",
-
       "Bash(whoami:*)",
       "Bash(uname:*)",
-
       "Bash(coderabbit --prompt-only)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(./secrets/**)",
+      "Read(~/.ssh/**)",
+      "Bash(sudo:*)",
+      "Bash(git:add)",
+      "Bash(git:commit)",
+      "Bash(git:push)",
+      "Bash(git:merge)",
+      "Bash(git:rebase)"
     ],
     "ask": [
       "Bash(docker:*)",
       "Bash(docker-compose:*)",
-
       "Bash(curl:*)",
       "Bash(wget:*)",
-
       "Bash(rm:*)",
-
       "Bash(git:branch)",
       "Bash(git:checkout)",
       "Bash(git:switch)",
@@ -65,19 +66,6 @@
       "Bash(git:fetch)",
       "Bash(git:reset)",
       "Bash(git:stash)"
-    ],
-    "deny": [
-      "Read(.env)",
-      "Read(./secrets/**)",
-      "Read(~/.ssh/**)",
-
-      "Bash(sudo:*)",
-
-      "Bash(git:add)",
-      "Bash(git:commit)",
-      "Bash(git:push)",
-      "Bash(git:merge)",
-      "Bash(git:rebase)"
     ]
   },
   "hooks": {
